@@ -1,12 +1,13 @@
 from pyfiglet import Figlet
 from termcolor import colored
+from tqdm import tqdm
+import time 
 class calc_interface():
-    def __init__(self, brand, welcome):
+    def __init__(self, brand, welcome, loading):
         self.brand = brand
         self.welcome = welcome
+        self.loading = loading
 # Brand of the Calculator
-    def __init__(self, brand):
-        self.brand = brand
     def get_brand(self):
         s_a_c = Figlet(font = "digital", justify = "right")
         print()
@@ -29,3 +30,12 @@ class calc_interface():
         print()
         return self.welcome
 # Loading Bar
+    def loading_bar(self):
+        for i in tqdm (range (100), desc="Loading...\U0001F973"):
+            time.sleep(0.05)
+            pass
+        print("\n\n")
+        print("\33[32m\33[1m                                                               Thank you for your patience!˶^•ﻌ•^˵ \33[0m\n")
+        print("⚜ " * 89)
+        print()
+        return self.loading
