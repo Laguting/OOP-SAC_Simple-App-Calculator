@@ -11,7 +11,7 @@ class Interface():
                 self.calculator = Operations()
 # Ask for the operation to perform.   
                 try:
-                    ask_usr = input("\n\33[1m\33[34m What operation would you like to perform? Enter Add = '+'; Subtraction = '-'; Multiplication = '*'; Division = '/': \33[0m")
+                    ask_usr = input("\33[1m\33[34m What operation would you like to perform? Enter Add = '+'; Subtraction = '-'; Multiplication = '*'; Division = '/': \33[0m")
                     if ask_usr not in ["+", "-", "*", "/"]:
                         raise ValueError
                 except ValueError:
@@ -20,10 +20,8 @@ class Interface():
 # Ask the user for the numbers to perform calculations
                 try:
                     print()
-                    print("⚜ " * 89)
                     number_1 = float(input("\n\33[43m1st number:\33[0m"))
                     number_2 = float(input("\n\33[43m2nd number:\33[0m"))
-                    print("")
                     print(ci_1.loading_bar())
                 except ValueError:
                     print("\n\33[1m\33[31mThis calculator only accepts numbers\33[0m") 
@@ -31,19 +29,19 @@ class Interface():
         # Add
                 if ask_usr == "+":
                     result = self.calculator.addition(number_1,number_2)
-                    self.print_result(f"\n\33[7m The result of inputting '{number_1} {ask_usr} {number_2}' is {result}\33[0m")
+                    self.print_result(f"\33[7m The result of inputting '{number_1} {ask_usr} {number_2}' is {result}\33[0m")
                     calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {result}" + '\n')
                     break
         # Subtract
                 elif ask_usr == "-":
                     result = self.calculator.subtract(number_1,number_2)
-                    self.print_result(f"\n\33[7m The result of inputting '{number_1} {ask_usr} {number_2}' is {result}\33[0m")
+                    self.print_result(f"\33[7m The result of inputting '{number_1} {ask_usr} {number_2}' is {result}\33[0m")
                     calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {result}" + '\n')
                     break
         # Multiply
                 elif ask_usr == "*":
                     result = self.calculator.multiply(number_1,number_2)
-                    self.print_result(f"\n\33[7m The result of inputting '{number_1} {ask_usr} {number_2}' is {result}\33[0m")
+                    self.print_result(f"\33[7m The result of inputting '{number_1} {ask_usr} {number_2}' is {result}\33[0m")
                     calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {result}" + '\n')
                     break
         # Divide
@@ -51,7 +49,7 @@ class Interface():
                     try:
                         ask_usr == "/"
                         result = self.calculator.divide(number_1,number_2)
-                        self.print_result(f"\n\33[7m The result of inputting '{number_1} {ask_usr} {number_2}' is {result}\33[0m")
+                        self.print_result(f"\33[7m The result of inputting '{number_1} {ask_usr} {number_2}' is {result}\33[0m")
                         calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {result}" + '\n')
                         break
                     except ZeroDivisionError:

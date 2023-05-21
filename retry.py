@@ -22,7 +22,6 @@ class Retry():
                 try:
                     exit_1 = Figlet(font = "slant")
                     print()
-                    print("⚜ " * 89)
                     print(colored(exit_1.renderText("                        Thank you! <3"), "magenta"))
                     print("\n\33[3m\33[1m                                                                 Until next time!... '૮₍ •⤙ •˶|\33[0m")
                     print("⚜ " * 89)
