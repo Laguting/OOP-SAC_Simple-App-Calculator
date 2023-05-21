@@ -14,4 +14,7 @@ class Calculator():
 # Display the question for operations, and numbers as well as the result of the inputted datas
     perf_calc = Interface("", "")
     print(perf_calc.process()) # add, subtract, multiply, divide display
-# Store the inputs in calc_history text file
+# Ask the user if the user want to try again
+    from retry import Retry
+    re_1 = Retry("")
+    print(re_1.re_try())
