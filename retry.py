@@ -2,6 +2,8 @@ from pyfiglet import Figlet
 from termcolor import colored
 from user_interface import Interface
 perf_calc = Interface("", "")
+from calculator_intros import calc_interface
+ci_1 = calc_interface("","","")
 # Allow the user to retry
 class Retry():
     def __init__(self, retry):
@@ -13,6 +15,7 @@ class Retry():
             again_usr = input("\n\33[36m Would you like to try again: Enter 'Y' if yes and 'N' if no: \33[0m")
                 # If yes call process
             if again_usr.upper() == "Y":
+               print(ci_1.loading_bar())
                perf_calc.process()
             # If no, Display "Thank you" and exit 
             else:

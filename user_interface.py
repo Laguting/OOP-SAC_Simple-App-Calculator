@@ -19,10 +19,11 @@ class Interface():
                     continue
 # Ask the user for the numbers to perform calculations
                 try:
+                    print()
                     print("⚜ " * 89)
                     number_1 = float(input("\n\33[43m1st number:\33[0m"))
                     number_2 = float(input("\n\33[43m2nd number:\33[0m"))
-                    print()
+                    print("")
                     print(ci_1.loading_bar())
                 except ValueError:
                     print("\n\33[1m\33[31mThis calculator only accepts numbers\33[0m") 
