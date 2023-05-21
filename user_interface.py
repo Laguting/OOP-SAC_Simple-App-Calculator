@@ -41,7 +41,18 @@ class Interface():
                     self.print_result(result)
                     calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {result}" + '\n')
                     break
-                return self.in_process
+        # Divide
+                else:
+                    try:
+                        ask_usr == "/"
+                        result = self.calculator.divide(number_1,number_2)
+                        self.print_result(result)
+                        calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {result}" + '\n')
+                        break
+                    except ZeroDivisionError:
+                         print("\n\33[1m\33[31mYou can't use zero(0) as your divisor\33[0m")
+                break
+        return self.in_process
 # Print result
     def print_result(self,result):
         print(f"\n\33[7m {result}\33[0m")
