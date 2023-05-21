@@ -20,8 +20,25 @@ https://github.com/Laguting/OOP-SAC_Simple-App-Calculator/assets/129570700/f4c86
 *Link to Gdrive (Demo Video)*
 https://drive.google.com/drive/folders/1lrho7-oxCnYbi5LPVbrHwQC8yn4pI1BW?usp=share_link
 
-## How to run in git bash?
-# Installations
-# Credits
+## How to run in git bash 🚀?
+> git clone 
+
+> cd OOP-SAC_Simple-App-Calculator/
+
+> python calculator_intros.py
+
+> python perform_calculations.py 
+
+> python retry.py 
+
+> python test_calculator.py 
+
+> python user_interface.py
+
+# INSTALLATIONS 📥
+- **This program used three installations namely Pyfiglet, Termcolor, and Tqdm. Install it by typing the following in the terminal.**
+> pip install pyfiglet, termcolor, and tqdm
+
+# CREDITS 
 ## CONTACTS
 #
