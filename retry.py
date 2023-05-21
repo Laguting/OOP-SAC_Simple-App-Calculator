@@ -30,6 +30,6 @@ class Retry():
                     if again_usr.upper() not in ["N"]:
                         raise ValueError
                 except ValueError:
-                    print("\n\33[1m\33[31mInvalid Operation. Try again.\33[0m")
+                    print("\n\33[1m\33[31mInvalid Operation. Try again.\33[0m\n")
                     continue 
         return self.retry

@@ -11,7 +11,7 @@ class Interface():
                 self.calculator = Operations()
 # Ask for the operation to perform.   
                 try:
-                    ask_usr = input("\33[1m\33[34m What operation would you like to perform? Enter Add = '+'; Subtraction = '-'; Multiplication = '*'; Division = '/': \33[0m")
+                    ask_usr = input("\n\33[1m\33[34m What operation would you like to perform? Enter Add = '+'; Subtraction = '-'; Multiplication = '*'; Division = '/': \33[0m")
                     if ask_usr not in ["+", "-", "*", "/"]:
                         raise ValueError
                 except ValueError:
