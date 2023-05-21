@@ -12,9 +12,6 @@ class Calculator():
     print(ci_1.show_welcome()) # Welcome the user
     print(ci_1.loading_bar()) # Loading Bar
 # Display the question for operations, and numbers as well as the result of the inputted datas
-    perf_calc = Interface("")
-    print(perf_calc.process())# add
-# subtract
-# multiply
-# divide
+    perf_calc = Interface("", "")
+    print(perf_calc.process()) # add, subtract, multiply, divide display
 # Store the inputs in calc_history text file
