@@ -11,8 +11,8 @@ class Calculator():
     print(ci_1.get_brand()) # Display the brand of the calculator
     print(ci_1.show_welcome()) # Welcome the user
     print(ci_1.loading_bar()) # Loading Bar
-# Display the result of the equations
-    perf_calc = Interface()
+# Display the question for operations, and numbers as well as the result of the inputted datas
+    perf_calc = Interface("")
     print(perf_calc.process())# add
 # subtract
 # multiply
