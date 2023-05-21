@@ -4,5 +4,6 @@ class Operations():
         return number_1 + number_2
     def subtract(self, number_1, number_2): # subtract
         return number_1 - number_2
-# multiply
+    def multiply(self, number_1, number_2): # multiply
+        return number_1 * number_2
 # divide

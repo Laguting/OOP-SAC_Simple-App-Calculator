@@ -23,15 +23,24 @@ class Interface():
                 except ValueError:
                     print("\n\33[1m\33[31mThis calculator only accepts numbers\33[0m") 
                     continue
+        # Add
                 if ask_usr == "+":
                     result = self.calculator.addition(number_1,number_2)
                     self.print_result(result)
+                    calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {result}" + '\n')
                     break
+        # Subtract
                 elif ask_usr == "-":
                     result = self.calculator.subtract(number_1,number_2)
                     self.print_result(result)
+                    calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {result}" + '\n')
                     break
-                calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {result}" + '\n')
+        # Multiply
+                elif ask_usr == "*":
+                    result = self.calculator.multiply(number_1,number_2)
+                    self.print_result(result)
+                    calculatorhistory_file.write(f"{number_1} {ask_usr} {number_2} = {result}" + '\n')
+                    break
                 return self.in_process
 # Print result
     def print_result(self,result):
