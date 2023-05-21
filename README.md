@@ -40,5 +40,10 @@ https://drive.google.com/drive/folders/1lrho7-oxCnYbi5LPVbrHwQC8yn4pI1BW?usp=sha
 > pip install pyfiglet, termcolor, and tqdm
 
 # CREDITS 
+- Developed by Maricon Jane G. Laguting from BSCpE 1-4
 ## CONTACTS
+- *Facebook*: https://www.facebook.com/mariconjaneglaguting?mibextid=ZbWKwL
+- *Number*: (TM) +63 926 395 2915
+- *Gmail*: lagutingmariconjaneg@gmail.com
+
 #
