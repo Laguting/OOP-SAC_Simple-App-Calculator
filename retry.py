@@ -18,7 +18,7 @@ class Retry():
                print(ci_1.loading_bar())
                perf_calc.process()
             # If no, Display "Thank you" and exit 
-            else:
+            if again_usr.upper() == "N":
                 try:
                     exit_1 = Figlet(font = "slant")
                     print()

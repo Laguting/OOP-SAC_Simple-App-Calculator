@@ -8,7 +8,7 @@ class modified_interface(Interface):
     def modified_process(self):
         with open("calc_history.text", "w") as calculatorhistory_file: # Open text file that will hold the history of inputs
             while True:
-                from modify_perform_calculation import Modified_operations
+                from modify_perfom_calculation import Modified_operations
                 self.calculator = Modified_operations()
 # Ask for the operation to perform.   
                 try:
