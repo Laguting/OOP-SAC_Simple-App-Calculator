@@ -1,10 +1,14 @@
 # Perform the calculations
 class Operations():
     def addition(self, number_1, number_2): # add
-        return number_1 + number_2
+        sum = number_1 + number_2
+        return sum
     def subtract(self, number_1, number_2): # subtract
-        return number_1 - number_2
+        minus = number_1 - number_2
+        return minus
     def multiply(self, number_1, number_2): # multiply
-        return number_1 * number_2
+        product = number_1 * number_2
+        return product
     def divide(self, number_1, number_2): # divide
-        return number_1 / number_2
+        quotient = number_1 / number_2
+        return quotient
